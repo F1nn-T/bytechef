@@ -63,7 +63,7 @@
         "options": null,
         "properties": [ {
           "advancedOption": null,
-          "description": "A list of line item objects, each containing information about an item in the order.",
+          "description": "The list of line item objects, each containing information about an item in the order.",
           "displayCondition": null,
           "expressionEnabled": null,
           "hidden": null,
@@ -77,7 +77,7 @@
           "placeholder": "Add to Line Items",
           "items": [ {
             "advancedOption": null,
-            "description": "A list of line item objects, each containing information about an item in the order.",
+            "description": "The list of line item objects, each containing information about an item in the order.",
             "displayCondition": null,
             "expressionEnabled": null,
             "hidden": null,
@@ -311,8 +311,9 @@
       "optionsDataSource": null
     } ],
     "title": "Create an order",
-    "output": null,
     "perform": null,
+    "processErrorResponse": null,
+    "output": null,
     "outputResponse": {
       "outputSchema": {
         "advancedOption": null,
@@ -658,8 +659,7 @@
       },
       "sampleOutput": null
     },
-    "workflowNodeDescription": null,
-    "processErrorResponse": null
+    "workflowNodeDescription": null
   }, {
     "batch": null,
     "dynamicOutput": false,
@@ -697,11 +697,11 @@
       }
     } ],
     "title": "Delete an order",
-    "output": null,
     "perform": null,
+    "processErrorResponse": null,
+    "output": null,
     "outputResponse": null,
-    "workflowNodeDescription": null,
-    "processErrorResponse": null
+    "workflowNodeDescription": null
   }, {
     "batch": null,
     "dynamicOutput": true,
@@ -739,8 +739,9 @@
       }
     } ],
     "title": "Cancel an order",
-    "output": null,
     "perform": null,
+    "processErrorResponse": null,
+    "output": null,
     "outputResponse": {
       "outputSchema": {
         "advancedOption": null,
@@ -1086,8 +1087,7 @@
       },
       "sampleOutput": null
     },
-    "workflowNodeDescription": null,
-    "processErrorResponse": null
+    "workflowNodeDescription": null
   }, {
     "batch": null,
     "dynamicOutput": true,
@@ -1249,8 +1249,9 @@
       "optionsDataSource": null
     } ],
     "title": "Update an order",
-    "output": null,
     "perform": null,
+    "processErrorResponse": null,
+    "output": null,
     "outputResponse": {
       "outputSchema": {
         "advancedOption": null,
@@ -1596,8 +1597,7 @@
       },
       "sampleOutput": null
     },
-    "workflowNodeDescription": null,
-    "processErrorResponse": null
+    "workflowNodeDescription": null
   }, {
     "batch": null,
     "dynamicOutput": true,
@@ -1635,8 +1635,9 @@
       }
     } ],
     "title": "Close an order",
-    "output": null,
     "perform": null,
+    "processErrorResponse": null,
+    "output": null,
     "outputResponse": {
       "outputSchema": {
         "advancedOption": null,
@@ -1982,8 +1983,7 @@
       },
       "sampleOutput": null
     },
-    "workflowNodeDescription": null,
-    "processErrorResponse": null
+    "workflowNodeDescription": null
   } ],
   "triggers": [ {
     "batch": null,
@@ -1999,6 +1999,7 @@
     "workflowNodeDescriptionFunction": null,
     "workflowSyncExecution": null,
     "workflowSyncValidation": null,
+    "staticWebhookRequest": null,
     "output": null,
     "outputResponse": {
       "outputSchema": {
@@ -2343,7 +2344,6 @@
       },
       "sampleOutput": null
     },
-    "poll": null,
     "deduplicate": null,
     "dynamicWebhookDisable": { },
     "dynamicWebhookEnable": { },
@@ -2351,7 +2351,7 @@
     "dynamicWebhookRequest": { },
     "listenerDisable": null,
     "listenerEnable": null,
-    "staticWebhookRequest": null,
+    "poll": null,
     "webhookValidate": null
   }, {
     "batch": null,
@@ -2367,6 +2367,7 @@
     "workflowNodeDescriptionFunction": null,
     "workflowSyncExecution": null,
     "workflowSyncValidation": null,
+    "staticWebhookRequest": null,
     "output": null,
     "outputResponse": {
       "outputSchema": {
@@ -2711,7 +2712,6 @@
       },
       "sampleOutput": null
     },
-    "poll": null,
     "deduplicate": null,
     "dynamicWebhookDisable": { },
     "dynamicWebhookEnable": { },
@@ -2719,7 +2719,7 @@
     "dynamicWebhookRequest": { },
     "listenerDisable": null,
     "listenerEnable": null,
-    "staticWebhookRequest": null,
+    "poll": null,
     "webhookValidate": null
   }, {
     "batch": null,
@@ -2735,6 +2735,7 @@
     "workflowNodeDescriptionFunction": null,
     "workflowSyncExecution": null,
     "workflowSyncValidation": null,
+    "staticWebhookRequest": null,
     "output": null,
     "outputResponse": {
       "outputSchema": {
@@ -3079,7 +3080,6 @@
       },
       "sampleOutput": null
     },
-    "poll": null,
     "deduplicate": null,
     "dynamicWebhookDisable": { },
     "dynamicWebhookEnable": { },
@@ -3087,7 +3087,7 @@
     "dynamicWebhookRequest": { },
     "listenerDisable": null,
     "listenerEnable": null,
-    "staticWebhookRequest": null,
+    "poll": null,
     "webhookValidate": null
   } ],
   "connection": {
@@ -3160,17 +3160,17 @@
       "title": "API Key",
       "type": "API_KEY",
       "acquire": null,
+      "scopes": null,
+      "authorizationUrl": null,
+      "tokenUrl": null,
+      "refreshUrl": null,
       "apply": null,
       "authorizationCallback": null,
-      "authorizationUrl": null,
       "clientId": null,
       "clientSecret": null,
       "pkce": null,
       "refresh": null,
-      "refreshUrl": null,
-      "scopes": null,
-      "refreshToken": null,
-      "tokenUrl": null
+      "refreshToken": null
     } ],
     "properties": null,
     "version": 1,
